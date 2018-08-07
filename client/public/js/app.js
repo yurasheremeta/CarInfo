@@ -1,4 +1,4 @@
-const rootUrl = 'http://localhost:8080/cars';
+const rootUrl = 'http://localhost:8080/car';
 $(document).ready(function(){
 
     $('#createCarForm .btn').on('click' , function(e) {
@@ -17,7 +17,7 @@ function createCar(){
   let fuel = $('#carFuel').val();
   let driveType = $('#carDriveType').val();
   let modelYear = $('#carModelYear').val();
-  let transmission $('#carTransmission').val();
+  let transmission = $('#carTransmission').val();
   let price = $('#carPrice').val();
 
   let car = {
@@ -29,7 +29,7 @@ function createCar(){
     "fuelType": fuel,
     "typeOfDrive": driveType,
     "modelYear": modelYear,
-    "transmission": transmission,
+    "transmission":  transmission,
     "price": price
   };
 
@@ -38,7 +38,7 @@ function createCar(){
     method: "POST",
     dataType: 'json',
     contentType: 'application/json',
-    data: JSON.stringify(car)
+    data: JSON.stringify(car),
 
     complete: function(){
         $('createCarForm')[0].reset();
