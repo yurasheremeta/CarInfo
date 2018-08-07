@@ -5,8 +5,10 @@ import java.time.LocalDate;
 
 import javax.persistence.Column;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public class CarDTO {
-	
+	@JsonIgnore
 	private Long id;
 	
 	private String carId;
