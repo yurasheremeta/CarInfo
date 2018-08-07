@@ -28,7 +28,6 @@ public class CarController {
 	@GetMapping
 	public ResponseEntity<List<CarDTO>> findAll(){
 		return new ResponseEntity<List<CarDTO>>(carService.findAll() , HttpStatus.OK);
-		
 	}
 
 

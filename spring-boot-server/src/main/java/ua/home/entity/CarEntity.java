@@ -4,8 +4,9 @@ import java.math.BigDecimal;
 import java.time.LocalDate;
 
 import javax.persistence.Column;
+import javax.persistence.Entity;
 import javax.persistence.Table;
-
+@Entity
 @Table(name = "car")
 public class CarEntity extends BaseEntity {
 	
@@ -19,10 +20,10 @@ public class CarEntity extends BaseEntity {
 	
 	private String image;
 	
-	@Column(columnDefinition = "Decimal(2,1)")
+	@Column(columnDefinition = "DECIMAL(2,1)")
 	private String engine;
 	
-	@Column(columnDefinition = "Decimal(9,2")
+	@Column(columnDefinition = "DECIMAL(9,2)")
 	private BigDecimal price;
 	
 	private LocalDate modelYear;

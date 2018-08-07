@@ -8,6 +8,74 @@
   <link rel = "stylesheet" href="public/css/bootstrap.min.css" />
 </head>
 <body>
+  <div class="container text-center" >
+      <h3>List of Cars</h3>
+  </div>
+
+  <section class="container-fluid">
+    <div class="row">
+      <div class="col-3">
+        <form id="createCarForm">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <label>Make</label>
+              <input type ="text" class ="form-control" id ="carMake">
+            </div>
+            <div class="form-group col-md-6">
+              <label>Model</label>
+              <input type ="text" class ="form-control" id ="carModel">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Image(800x600)</label>
+            <input type ="text" class ="form-control" id="carImage"/>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group col-md-2">
+              <label>Color</label>
+              <input type ="text" class ="form-control" id ="carColor">
+            </div>
+
+            <div class="form-group col-md-2">
+              <label>Engine</label>
+              <input type ="text" class ="form-control" id ="carEngine">
+            </div>
+
+            <div class="form-group col-md-2">
+              <label>Fuel</label>
+              <input type ="text" class ="form-control" id ="carFuel">
+            </div>
+
+            <div class="form-group col-md-2">
+              <label>4x4/2x4</label>
+              <input type ="text" class ="form-control" id ="carDriveType">
+            </div>
+
+            <div class="form-group col-md-2">
+              <label>Transmission</label>
+              <input type ="text" class ="form-control" id ="carTransmission">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-2">
+              <label>Price</label>
+              <Input type="text" class="form-control" id="carPrice"/>
+            </div>
+            <div class="form-group col-md-6">
+              <label>Year</label>
+              <Input type="text" class="form-control" id="carModelYear"/>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-dark">Add Car</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
 
   <script src="public/js/jquery.min.js"></script>
   <script src="public/js/bootstrap.min.js"></script>
